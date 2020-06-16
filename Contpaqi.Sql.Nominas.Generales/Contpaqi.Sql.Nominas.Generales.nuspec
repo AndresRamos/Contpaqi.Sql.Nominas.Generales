@@ -8,8 +8,7 @@
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/AndresRamos/Contpaqi</projectUrl>
-    <iconUrl>https://github.com/AndresRamos/Contpaqi</iconUrl>
+    <projectUrl>https://github.com/AndresRamos/Contpaqi.Sql.Nominas.Generales</projectUrl>
     <description>$description$</description>
     <releaseNotes>$description$</releaseNotes>
     <copyright>$copyright$</copyright>
