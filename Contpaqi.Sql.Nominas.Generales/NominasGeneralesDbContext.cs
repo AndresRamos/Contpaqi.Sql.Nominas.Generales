@@ -7,17 +7,11 @@ namespace Contpaqi.Sql.Nominas.Generales
 {
     public class NominasGeneralesDbContext : DbContext
     {
-        static NominasGeneralesDbContext()
-        {
-            Database.SetInitializer(new NullDatabaseInitializer<NominasGeneralesDbContext>());
-        }
-
-        public NominasGeneralesDbContext()
-            : base("name=NominasGeneralesDbContext")
+        public NominasGeneralesDbContext() : base("name=NominasGeneralesDbContext")
         {
         }
 
-        protected NominasGeneralesDbContext(DbCompiledModel model) : base(model)
+        public NominasGeneralesDbContext(DbCompiledModel model) : base(model)
         {
         }
 
@@ -53,6 +47,7 @@ namespace Contpaqi.Sql.Nominas.Generales
         public virtual DbSet<CACIdiom> CACIdiom { get; set; }
         public virtual DbSet<DDFIELD> DDFIELD { get; set; }
         public virtual DbSet<DDTABLE> DDTABLE { get; set; }
+        public virtual DbSet<FechaCatalogos> FechaCatalogos { get; set; }
         public virtual DbSet<NOM10000> NOM10000 { get; set; }
         public virtual DbSet<Nom20000> Nom20000 { get; set; }
         public virtual DbSet<NOM30000> NOM30000 { get; set; }
@@ -282,6 +277,10 @@ namespace Contpaqi.Sql.Nominas.Generales
 
             modelBuilder.Entity<DDTABLE>()
                 .Property(e => e.group)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<FechaCatalogos>()
+                .Property(e => e.TipoCatalogos)
                 .IsUnicode(false);
 
             modelBuilder.Entity<NOM10000>()

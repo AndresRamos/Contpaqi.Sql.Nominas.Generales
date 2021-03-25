@@ -67,6 +67,8 @@
     <Compile Include="DDTABLE.cs" />
     <Compile Include="DiccionarioCatalogos.cs" />
     <Compile Include="DiccionarioDescripciones.cs" />
+    <Compile Include="Factories\NominasGeneralesDbContextFactory.cs" />
+    <Compile Include="FechaCatalogos.cs" />
     <Compile Include="FechaCatalogosSAT.cs" />
     <Compile Include="NOM10000.cs" />
     <Compile Include="Nom20000.cs" />
@@ -89,6 +91,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

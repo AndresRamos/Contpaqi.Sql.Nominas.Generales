@@ -2,15 +2,15 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.0.3</version>
     <title>$title$</title>
-    <authors>$author$</authors>
+    <authors>AR Software</authors>
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/AndresRamos/Contpaqi.Sql.Nominas.Generales</projectUrl>
-    <description>$description$</description>
-    <releaseNotes>$description$</releaseNotes>
+    <description>Modelo de datos para las tablas generales de Contpaqi Nominas.</description>
+    <releaseNotes>Se volvio a crear el modelo para la version 13.2.1 de CONTPAQi Nominas</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>Contpaqi SQL Nominas</tags>
   </metadata>
